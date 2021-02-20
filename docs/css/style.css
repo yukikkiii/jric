@@ -49,7 +49,6 @@ body {font-size: 1.0rem;font-family: "Helvetica Neue", Arial, "Hiragino Kaku Got
     position: relative;
 }
 .section-content {
-    max-width: 840px;
     margin: 0 auto;
     padding: 0 20px;
 }
@@ -123,7 +122,6 @@ header {position: fixed;top:0;left:0;right:0;z-index: 1000;background: #fff;}
     left: 50%;
     transform: translate(-50%, -50%);
     width: 100%;
-    max-width: 800px;
 }
 .scroll-btn {
     position: absolute;
@@ -150,22 +148,24 @@ header {position: fixed;top:0;left:0;right:0;z-index: 1000;background: #fff;}
 
 .flex-kv {
     align-items: flex-start;
+    justify-content: center;
 }
 .flex-kv .pc-flex--left {
-    flex: 1;
 }
 .flex-kv .pc-flex--right {
-    width: 65%;
-    margin-left: 80px;
+    margin-left: 50px;
 }
 .kv-logo {
-    width: 200px;
-    height: 200px;
-    margin: 0 auto 30px;
+    width: 15vw;
+    margin: 0 auto 60px;
 
 }
+.h1 {
+    width: 20vw;
+    margin: 0 auto;
+}
 .kv-right-img {
-    height: 400px;
+    width: 35vw;
 }
 
 /* nav */
@@ -362,16 +362,17 @@ li.nav-active {
     margin-left: 40px;
 }
 .flex-greeting {
+    justify-content: center;
     margin-bottom: 100px;
 }
 .heading-ttl {
     margin-bottom: 50px;
 }
 .greeting-ttl-wrap {
-    width: 50%;
+    width: 35vw;
 }
 .greeting-img-wrap {
-    flex: 1;
+    width: 25vw;
 }
 .greeting-img-wrap .img-wrap {
     height: 100%;
@@ -544,10 +545,10 @@ li.nav-active {
         padding-right: 20px;
     }
     .h1 {
+        width: 70vw;
         margin-bottom: 20px;
     }
     .h1-img-wrap {
-        max-width: 300px;
         margin: 0 auto;
     }
     
@@ -569,13 +570,22 @@ li.nav-active {
     .menu-box {
         width: 280px !important;
     }
+    .section-kv .section-inner {
+        padding-right: 0px;
+        padding-left: 0px;
+    }
     .kv-logo {
-        width: 150px;
-        height: 150px;
+        width: 40vw;
+        height: auto;
+        margin-bottom: 20px;
+    }
+    .kv-right-img {
+        width: 75vw !important;
+        height: auto !important;
+        margin: 0 auto;
     }
     .kv-right-img img {
-        width: auto;
-        height: 100%;
+        width: 100%;
     }
     .scroll-btn {
         bottom: -30px;
@@ -597,14 +607,23 @@ li.nav-active {
         max-width: 400px;
 
     }
-    .greeting-img-wrap {
-        margin-bottom: 40px;
+    .greeting-img-wrap .img-wrap  {
+        margin: 0 auto 40px;
+        width: 60vw;
     }
-    .greeting-img-wrap .img-wrap {
-        height: 200px;
+    .greeting-img-wrap .img-wrap img {
+        position: relative;
+        width: 100%;
+        height: auto;
+        top: unset;
+        left: unset;
+        transform: translate(0,0);
     }
     .heading-ttl {
         margin-bottom: 20px;
+    }
+    .service-list--item .img-wrap2 {
+        width: 45vw;
     }
     .service-lists li span {
         padding-left: 0px;
