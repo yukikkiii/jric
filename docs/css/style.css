@@ -656,8 +656,7 @@ li.nav-active {
 
     }
     .greeting-ttl-wrap {
-        max-width: 400px;
-        width: auto;
+        width: 60vw;
 
     }
     .greeting-img-wrap {
