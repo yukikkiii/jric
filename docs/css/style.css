@@ -71,7 +71,7 @@ body {font-size: 1.0rem;font-family: "Helvetica Neue", Arial, "Hiragino Kaku Got
 .pc-flex { display: flex;}
 
 /* header */
-header {position: fixed;top:0;left:0;right:0;z-index: 1000;}
+header {position: fixed;top:0;left:0;right:0;z-index: 1000;background: #fff;}
 .header-inner {position:relative;padding: 10px;height: 60px;z-index: 1000;}
 .header-logo {
     position: absolute;
@@ -529,7 +529,7 @@ li.nav-active {
 
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
     :root {
         --bk-img-width: 140px;
         --bk-img-width2: 180px;
