@@ -554,7 +554,7 @@ li.nav-active {
 
 @media screen and (max-width: 767px) {
     body {
-        font-size: 3vw;
+        font-size: 3vw !important;
     }
 
 
@@ -710,7 +710,7 @@ li.nav-active {
 
 @media screen and (max-width: 600px) {
     body {
-        font-size: 4vw;
+        font-size: 4vw !important;
     }
 
     .lists li {
