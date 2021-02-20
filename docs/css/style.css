@@ -441,7 +441,7 @@ li.nav-active {
     background-image: url("../img/icon-square.png");
 }
 .service-list--item .img-wrap2 {
-    width: 20vw;
+    width: 15vw;
     margin: 0 auto 60px;
 }
 
@@ -535,9 +535,9 @@ li.nav-active {
 
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 1100px) {
     body {
-        font-size: 1.6vw;
+        font-size: 1.6vw !important;
     }
     .lists li {
         padding-left: 3.5vw;
@@ -545,6 +545,10 @@ li.nav-active {
     .lists li::before {
         width: 2.5vw;
         height: 2.5vw;
+    }
+    .h2-ja img {
+        height:2.0vw !important;
+
     }
 }
 
@@ -586,7 +590,7 @@ li.nav-active {
         height: 5.0vw;
     }
     .h2 .h2-ja img {
-        height: 4.0vw;
+        height: 4.0vw !important;
     }
     .h3 img {
         height: 5.0vw;
@@ -685,7 +689,7 @@ li.nav-active {
         position: relative;
     }
     .company-summary {
-        font-size: 0.9rem;
+        font-size:2.5vw;
     }
     .company-summary th {
         padding: 10px 20px 10px 0;
@@ -716,6 +720,8 @@ li.nav-active {
 
         width: 6vw;
         height: 6vw;
-
+    }
+    .company-summary {
+        font-size:3.5vw;
     }
 }
