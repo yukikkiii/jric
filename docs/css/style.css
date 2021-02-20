@@ -175,12 +175,14 @@ header {position: fixed;top:0;left:0;right:0;z-index: 1000;}
     width: 10px;
 }
 .nav-items {
+    height: calc(100vh - 120px);
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
 .nav-items li {
+    height: calc(20% - 30px);
     border-left: solid 2px #ccc;
     padding-left: 5px;
     padding-bottom: 70px;
