@@ -155,7 +155,7 @@ header {position: fixed;top:0;left:0;right:0;z-index: 1000;background: #fff;}
     flex: 1;
 }
 .flex-kv .pc-flex--right {
-    width: 60%;
+    width: 65%;
     margin-left: 80px;
 }
 .kv-logo {
@@ -546,6 +546,10 @@ li.nav-active {
     .h1 {
         margin-bottom: 20px;
     }
+    .h1-img-wrap {
+        max-width: 300px;
+        margin: 0 auto;
+    }
     
     .h2 {
         margin-bottom: 30px;
@@ -569,6 +573,10 @@ li.nav-active {
         width: 150px;
         height: 150px;
     }
+    .kv-right-img img {
+        width: auto;
+        height: 100%;
+    }
     .scroll-btn {
         bottom: -30px;
     }
@@ -577,13 +585,17 @@ li.nav-active {
     }
     
     .pc-flex--right, .pc-flex--left {
-        margin-left:0 !important;
-        margin-right:0 !important;
+        margin-left:auto !important;
+        margin-right:auto !important;
         width: 100% !important;
 
     }
     .kv-right-img {
         height: 200px;
+    }
+    .greeting-ttl-wrap {
+        max-width: 400px;
+
     }
     .greeting-img-wrap {
         margin-bottom: 40px;
