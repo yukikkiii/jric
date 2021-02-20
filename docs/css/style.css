@@ -540,6 +540,12 @@ li.nav-active {
     .h1 {
         margin-bottom: 20px;
     }
+    .h1-img-wrap {
+        width: 100%;
+    }
+    .h1-img-wrap img {
+        width: 100%;
+    }
     .h2 {
         margin-bottom: 30px;
     }
