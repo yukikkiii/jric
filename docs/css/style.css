@@ -1,6 +1,6 @@
 :root {
-    --bk-img-width: 300px;
-    --bk-img-width2: 300px;
+    --bk-img-width: 30vw;
+    --bk-img-width2: 30vw;
 }
 *{-webkit-box-sizing:border-box;box-sizing:border-box; outline: none;margin: 0; padding:0;}
 html {
@@ -10,30 +10,30 @@ html {
     background-color: #fff;
 }
 a {text-decoration: none;}
+
 ul, li {list-style: none;}
-body {font-size: 1.0rem;font-family: "Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;}
+body {font-size: 1.0rem;font-family: "Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;font-size: 1.2vw}
 .only-sp {display: none;}
 .only-pc {display: block;}
-.h1-img-wrap {
-    width: 100%;
-}
-.h1-img-wrap img {
-    width: 100%;
-}
+.h1-img-wrap {width: 100%;}
+.h1-img-wrap img {width: 100%;}
 .h2 {
     text-align: center;
     margin-bottom: 80px;
 }
+.h2-en {
+    margin-bottom: 5px;
+}
 .h2 .h2-en img{
-    width: 150px;
+    height: 2.5vw; 
     margin: 0 auto;
 }
 .h2 .h2-ja img{
-    height: 17px;
+    height: 1.5vw; 
     margin: 0 auto;
 }
 .h3 img {
-    height: 32px; 
+    height: 3.2vw; 
     padding-bottom: 10px;
     border-bottom: solid 1px #A2D5D5;
 }
@@ -153,19 +153,22 @@ header {position: fixed;top:0;left:0;right:0;z-index: 1000;background: #fff;}
 .flex-kv .pc-flex--left {
 }
 .flex-kv .pc-flex--right {
-    margin-left: 50px;
+    margin-left: 4vw;
 }
 .kv-logo {
     width: 12vw;
     margin: 0 auto 60px;
+    min-width: 150px;
 
 }
 .h1 {
     width: 20vw;
     margin: 0 auto;
+    min-width: 200px;
 }
 .kv-right-img {
     width: 35vw;
+    min-width: 350px;
 }
 
 /* nav */
@@ -359,7 +362,7 @@ li.nav-active {
     background-color: rgba(250, 250, 250, 1);
 }
 .flex-greeting .pc-flex--right {
-    margin-left: 40px;
+    margin-left: 4vw;
 }
 .flex-greeting {
     justify-content: center;
@@ -369,7 +372,7 @@ li.nav-active {
     margin-bottom: 50px;
 }
 .greeting-ttl-wrap {
-    width: 35vw;
+    width: 33vw;
 }
 .greeting-img-wrap {
     width: 25vw;
@@ -384,7 +387,7 @@ li.nav-active {
 .lists li {
     position: relative;
     margin-bottom: 10px;
-    padding-left: 30px;
+    padding-left: 3vw;
 }
 .lists li::before {
     content: "";
@@ -392,8 +395,8 @@ li.nav-active {
     top: 0;
     left: 0;
     bottom: 50%;
-    width: 20px;
-    height: 20px;
+    width: 2vw;
+    height: 2vw;
     background: url() no-repeat top left / 100% auto;
 }
 .question-lists li:before{
@@ -531,6 +534,9 @@ li.nav-active {
 }
 
 @media screen and (max-width: 767px) {
+    body {
+        font-size: 4vw;
+    }
     :root {
         --bk-img-width: 140px;
         --bk-img-width2: 180px;
@@ -547,6 +553,7 @@ li.nav-active {
     .h1 {
         width: 70vw;
         margin-bottom: 20px;
+        max-width: 300px;
     }
     .h1-img-wrap {
         margin: 0 auto;
@@ -578,11 +585,14 @@ li.nav-active {
         width: 40vw;
         height: auto;
         margin-bottom: 20px;
+        max-width: 200px;
     }
     .kv-right-img {
         width: 75vw !important;
         height: auto !important;
         margin: 0 auto;
+        min-width: auto;
+        max-width: 350px;
     }
     .kv-right-img img {
         width: 100%;
@@ -597,20 +607,31 @@ li.nav-active {
     .pc-flex--right, .pc-flex--left {
         margin-left:auto !important;
         margin-right:auto !important;
-        width: 100% !important;
+        margin-bottom: 40px;
 
     }
     .kv-right-img {
         height: 300px;
     }
-    .greeting-ttl-wrap {
-        max-width: 400px;
+    .lists li {
+        padding-left: 7vw;
+    }
+    .lists li::before {
+
+        width: 6vw;
+        height: 6vw;
 
     }
-    .greeting-img-wrap .img-wrap  {
+    .greeting-ttl-wrap {
+        max-width: 400px;
+        width: auto;
+
+    }
+    .greeting-img-wrap {
         margin: 0 auto 40px;
         width: 60vw;
     }
+
     .greeting-img-wrap .img-wrap img {
         position: relative;
         width: 100%;
@@ -624,6 +645,7 @@ li.nav-active {
     }
     .service-list--item .img-wrap2 {
         width: 45vw;
+        max-width: 200px;
     }
     .service-lists li span {
         padding-left: 0px;
