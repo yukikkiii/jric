@@ -32,13 +32,15 @@ body {font-size: 1.0rem;font-family: "Helvetica Neue", Arial, "Hiragino Kaku Got
     height: 1.5vw; 
     margin: 0 auto;
 }
+
 .h3 img {
-    height: 3.2vw; 
-    padding-bottom: 10px;
-    border-bottom: solid 1px #A2D5D5;
+    height: 2.0vw; 
 }
 .h3 {
+    display:inline-block;
+    padding-bottom: 5px;
     margin-bottom: 30px;
+    border-bottom: solid 1px #A2D5D5;
 }
 .section {
     padding: 60px 60px 0px;
@@ -562,6 +564,18 @@ li.nav-active {
     .h2 {
         margin-bottom: 30px;
     }
+    .h2 .h2-en {
+        margin-bottom: 0px;
+    }
+    .h2 .h2-en img {
+        height: 5.0vw;
+    }
+    .h2 .h2-ja img {
+        height: 4.0vw;
+    }
+    .h3 img {
+        height: 5.0vw;
+    } 
     .copyright {
         width: 20px;
     }
@@ -582,13 +596,13 @@ li.nav-active {
         padding-left: 0px;
     }
     .kv-logo {
-        width: 40vw;
+        width: 30vw;
         height: auto;
         margin-bottom: 20px;
         max-width: 200px;
     }
     .kv-right-img {
-        width: 75vw !important;
+        width: 60vw !important;
         height: auto !important;
         margin: 0 auto;
         min-width: auto;
@@ -607,7 +621,7 @@ li.nav-active {
     .pc-flex--right, .pc-flex--left {
         margin-left:auto !important;
         margin-right:auto !important;
-        margin-bottom: 40px;
+        margin-bottom: 20px;
 
     }
     .kv-right-img {
