@@ -355,8 +355,8 @@ li.nav-active {
     position: absolute;
     bottom: 0;
     right:0;
-    width: 300px;
-    height: 300px;
+    width: var(--bk-img-width);
+    height: var(--bk-img-width);
     background: url("../img/greeting-bottom-bk.png") no-repeat bottom right / var(--bk-img-width) auto;
 }
 .section-greeting .section-inner {
@@ -452,11 +452,11 @@ li.nav-active {
 .section-company .section-inner::before {
     content:"";
     position:absolute;
-    width: 300px;
-    height: 300px;
+    width: var(--bk-img-width);
+    height: var(--bk-img-width);
     top: 0;
     right:0;
-    background: url("../img/company-top-bk.png") no-repeat top right / var(--bk-img-width) auto; 
+    background: url("../img/company-top-bk.png") no-repeat top right / auto var(--bk-img-width); 
 }
 .section-company .section-inner {
     background: url("../img/company-bottom-bk.png") no-repeat bottom left / var(--bk-img-width) auto;
@@ -535,10 +535,25 @@ li.nav-active {
 
 }
 
+@media screen and (max-width: 900px) {
+    body {
+        font-size: 1.6vw;
+    }
+    .lists li {
+        padding-left: 3.5vw;
+    }
+    .lists li::before {
+        width: 2.5vw;
+        height: 2.5vw;
+    }
+}
+
 @media screen and (max-width: 767px) {
     body {
-        font-size: 4vw;
+        font-size: 3vw;
     }
+
+
     :root {
         --bk-img-width: 140px;
         --bk-img-width2: 180px;
@@ -628,12 +643,12 @@ li.nav-active {
         height: 300px;
     }
     .lists li {
-        padding-left: 7vw;
+        padding-left: 5vw;
     }
     .lists li::before {
 
-        width: 6vw;
-        height: 6vw;
+        width: 4vw;
+        height: 4vw;
 
     }
     .greeting-ttl-wrap {
@@ -686,5 +701,21 @@ li.nav-active {
     }
     .contact-address--email {
         font-weight: 900;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    body {
+        font-size: 4vw;
+    }
+
+    .lists li {
+        padding-left: 7vw;
+    }
+    .lists li::before {
+
+        width: 6vw;
+        height: 6vw;
+
     }
 }
