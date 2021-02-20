@@ -436,8 +436,8 @@ li.nav-active {
     background-image: url("../img/icon-square.png");
 }
 .service-list--item .img-wrap2 {
-    width: 150px;
-    margin: 0 auto 30px;
+    width: 20vw;
+    margin: 0 auto 60px;
 }
 
 /* company */
