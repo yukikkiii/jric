@@ -695,12 +695,14 @@ li.nav-active {
 
     }
     .greeting-ttl-wrap {
-        width: 60vw;
+        width: 75vw;
+        max-width: 400px;
 
     }
     .greeting-img-wrap {
         margin: 0 auto 40px;
         width: 60vw;
+        max-width: 300px;
     }
 
     .greeting-img-wrap .img-wrap img {
