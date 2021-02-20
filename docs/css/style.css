@@ -14,6 +14,12 @@ ul, li {list-style: none;}
 body {font-size: 1.0rem;font-family: "Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;}
 .only-sp {display: none;}
 .only-pc {display: block;}
+.h1-img-wrap {
+    width: 100%;
+}
+.h1-img-wrap img {
+    width: 100%;
+}
 .h2 {
     text-align: center;
     margin-bottom: 80px;
@@ -540,12 +546,7 @@ li.nav-active {
     .h1 {
         margin-bottom: 20px;
     }
-    .h1-img-wrap {
-        width: 100%;
-    }
-    .h1-img-wrap img {
-        width: 100%;
-    }
+    
     .h2 {
         margin-bottom: 30px;
     }
